@@ -68,12 +68,18 @@
 
 - 맷플롯립 한글 설정
 ```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+# 한글로 Matplotlib 사용시 항상 필요
 from matplotlib import rcParams, font_manager, rc
 
-font_path = 'C:/Windows/Fonts/NanumGothic.ttf' # 나눔고딕코딩 사용, 나눔고딕에서 오류발생(!)
-font = font_manager.FontProperties(fname=font_path).get_name() # 실제 설치된 폰트 이름조회
-rc('font', family=font) # 한글깨짐현상 해결!!
-rcParams['axes.unicode_minus'] = False # 한글 사용시 마이너스 표시 깨짐 해결!
+font_path = 'C:/Windows/Fonts/malgun.ttf'
+font = font_manager.FontProperties(fname=font_path).get_name()
+rc('font', family=font)
+rcParams['axes.unicode_minus'] = False
+
+sns.set_style('darkgrid')
+sns.set_theme(font='Malgun Gothic', rc={'axes.unicode_minus': False})
 ```
 
 - 시본(seaborn) 모듈(맷플롯립 하위 모듈) 설치
@@ -128,8 +134,8 @@ rcParams['axes.unicode_minus'] = False # 한글 사용시 마이너스 표시 �
 ## 2일차
 
 ### 빅데이터에 필요한 모듈
-- Maplotlib(차트), Seaborn(차트꾸미기), Numpy(배열)
-- Pandas(데이터 조작), Folium(지도), Faker(터미데이터 생성)
+- Numpy(배열), Pandas(데이터 조작), Maplotlib(차트), Seaborn(차트꾸미기)
+- Folium(지도), Faker(터미데이터 생성)
 
 - [노트북](./day02/mldl01_주요모듈학습.ipynb)
 
@@ -145,9 +151,9 @@ rcParams['axes.unicode_minus'] = False # 한글 사용시 마이너스 표시 �
 - `과대적합` - overfit. 모델 훈련세트 성능이 테스트세트 성능보다 훨씬 높을때
 - `과소적합` - underfit. 훈련세트 성능이 낮거나, 테스트세트 성능이 너무 높을때.
 
-<img src="./image/ml0004.png" width="700">
+<img src="./image/ml0004.png" width="500">
 
-- [노트북]()
+- [노트북](./day02/mldl_03_선형회귀.ipynb)
 
 ### 로지스틱회귀
 
