@@ -153,7 +153,16 @@ sns.set_theme(font='Malgun Gothic', rc={'axes.unicode_minus': False})
 
 <img src="./image/ml0004.png" width="500">
 
+
+- K-최근접 이웃 회귀 알고리즘 문제점 확인
+
 - [노트북](./day02/mldl_03_선형회귀.ipynb)
+
+- 선형회귀 중 직선(1차 방정식)의 문제점 확인
+
+## 3일차
+
+### 선형회귀 중 다항회귀
 
 ### 로지스틱회귀
 
