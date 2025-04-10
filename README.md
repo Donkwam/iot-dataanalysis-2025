@@ -274,6 +274,8 @@ sns.set_theme(font='Malgun Gothic', rc={'axes.unicode_minus': False})
         - 반대도 동일
     - 크로스엔트로피 손실함수
 
+- [노트북](./day03/mldl02_%20확률적경사하강법.ipynb)
+
 ### 교차검증과 그리드 서치
 
 ### 인공신경망
