@@ -382,12 +382,18 @@ sns.set_theme(font='Malgun Gothic', rc={'axes.unicode_minus': False})
 
 ### 파이토치 실습
 - 파이토치로 Fashion-MNIST 실습
+- Keras CNN과 비교해서 학습할 것!
 
-- [노트북]()
+- [노트북](./day06/mldl02_파이토치_합성곱신경망.ipynb)
+
+## 7일차
 
 ### 토이프로젝트
 
+### YOLO
+
 ## 8일차
 
-### 코딩테스트
+### 토이프로젝트
 
+### 코딩테스트
